@@ -8,7 +8,11 @@ const purchase = document.querySelector(".purchase");
 const description = document.querySelector(".info h3");
 const sizes = document.querySelector(".sizes");
 
-const snksize = document.getElementById("snkSize");
+
+
+
+
+//Click button event
 const detail = document.getElementsByClassName("detail");
 
 

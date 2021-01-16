@@ -5,29 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d cardEffect</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel= "stylesheet" href="./style.css">
+    <link rel= "stylesheet" href="./css/style.css">
+    <!-- lightslider -->
+    <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lightslider.js"></script>
+    <script>
+        $(document).ready(function() {
+           $("#content-slider").lightSlider({
+               loop:true,
+               keyPress:true
+           });
+           $('#image-gallery').lightSlider({
+               gallery:true,
+               item:1,
+               thumbItem:9,
+               slideMargin: 0,
+               speed:500,
+               auto:true,
+               loop:true,
+               onSliderLoad: function() {
+                   $('#image-gallery').removeClass('cS-hidden');
+               }  
+           });
+       });
+   </script>
+
 </head>
 <body>
-   <div class="container">
-       <div class="card">
-           <div class="sneaker">
-               <img src="./adidas.png" alt="adidas">
-           </div>
-           <div class="info">
-               <h1 class="title">Adidas ZX</h1>
-               <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
-                <div class="sizes">
-                    <button class = "detail">39</button>
-                    <button class = "detail">40</button>
-                    <button class = "detail">42</button>
-                    <button class = "detail">44</button>
+    
+   
+        <!-- slider-->
+        <div class="container">
+            <ul id="content-slider" class="content-slider">
+               <!-- 1 card -->
+                <li>
+                    <!-- sneakers card -->
+                <div class="card">
+                    <div class="sneaker">
+                        <img src="./img/adidas.png" alt="adidas">
+                    </div>
+                    <div class="info">
+                        <h1 class="title">Adidas ZX</h1>
+                        <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                         <div class="sizes">
+                             <button class = "detail">39</button>
+                             <button class = "detail">40</button>
+                             <button class = "detail">42</button>
+                             <button class = "detail">44</button>
+                         </div>
+                         <div class="purchase">
+                             <button>Purchase</button>
+                         </div>
+                     </div>
                 </div>
-                <div class="purchase">
-                    <button>Purchase</button>
-                </div>
-            </div>
-       </div>
-   </div>
-    <script src="./app.js"></script>
+                <!-- sneakers card end-->
+                </li>
+
+              <!-- 2 card -->
+                <li>
+                    <div class="card">
+                        <div class="sneaker">
+                            <img src="./img/adidas.png" alt="adidas">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">Adidas ZX</h1>
+                            <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                             <div class="sizes">
+                                 <button class = "detail">39</button>
+                                 <button class = "detail">40</button>
+                                 <button class = "detail">42</button>
+                                 <button class = "detail">44</button>
+                             </div>
+                             <div class="purchase">
+                                 <button>Purchase</button>
+                             </div>
+                         </div>
+                    </div>
+                </li>
+
+                <!-- 2 card -->
+                <li>
+                    <div class="card">
+                        <div class="sneaker">
+                            <img src="./img/adidas.png" alt="adidas">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">Adidas ZX</h1>
+                            <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                             <div class="sizes">
+                                 <button class = "detail">39</button>
+                                 <button class = "detail">40</button>
+                                 <button class = "detail">42</button>
+                                 <button class = "detail">44</button>
+                             </div>
+                             <div class="purchase">
+                                 <button>Purchase</button>
+                             </div>
+                         </div>
+                    </div>
+                </li>
+
+                <li>
+                    </li>
+
+                
+            </ul>
+        </div>
+       
+                
+               
+           
+            
+       
+        
+
+      
+   
+    <script src="./js/app.js"></script>
+    
 </body>
 </html>
